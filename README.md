@@ -12,7 +12,7 @@ Removes a release from a repo.
 - name: Get release
   uses: easyware-io/remove-release@v1
   with:
-    release: v1.0.0
+    tag_name: v1.0.0
     token: ${{ secrets.GITHUB_TOKEN }}
     owner: <optional>
     repo: <optional>
