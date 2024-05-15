@@ -1,0 +1,25 @@
+name: 'Removes a release from a repo'
+description: 'Removes a release from a repo.'
+author: 'easyware.io'
+inputs:
+  token:
+    required: true
+    description: 'GitHub token'
+  tag_name:
+    required: true
+    description: 'Release tag to check'
+  owner:
+    required: false
+    description: 'Owner of the repository'
+  repo:
+    required: false
+    description: 'Repository name'
+outputs:
+  data:
+    description: 'The release data'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: shield
+  color: orange
